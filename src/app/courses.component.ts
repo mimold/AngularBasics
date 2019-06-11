@@ -29,7 +29,8 @@ import { Component}  from '@angular/core'
         {{ course.students | number}} <br/>
         {{ course.rating | number:'2.1-1'}} <br/>
         {{ course.price | currency: 'AUD':false:'3.2-3'}} <br/>
-        {{ course.releaseDate | date:'mediumDate' }} 
+        {{ course.releaseDate | date:'mediumDate' }} <br/>
+        {{ text | summary}}
         `
 })
 export class CoursesComponent{
@@ -38,6 +39,7 @@ export class CoursesComponent{
     colspan=2;
     isActive = true;
     email = "mimold@yahoo.commm";
+    text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 
     imageUrl = "http://lorempixel.com/400/200";
 
